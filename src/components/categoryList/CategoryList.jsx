@@ -23,7 +23,7 @@ const CategoryList = () => {
                 </Link>
                 <Link
                     href={'/blog'}
-                    className={`${styles.category} ${styles.style}`}
+                    className={`${styles.category} ${styles.fashion}`}
                 >
                     <Image
                         src="/fashion.png"
@@ -32,12 +32,12 @@ const CategoryList = () => {
                         height={32}
                         className={styles.image}
                     />
-                    styles
+                    Fashion
                 </Link>
 
                 <Link
                     href={'/blog'}
-                    className={`${styles.category} ${styles.style}`}
+                    className={`${styles.category} ${styles.food}`}
                 >
                     <Image
                         src="/food.png"
@@ -46,12 +46,12 @@ const CategoryList = () => {
                         height={32}
                         className={styles.image}
                     />
-                    styles
+                    Food
                 </Link>
 
                 <Link
                     href={'/blog'}
-                    className={`${styles.category} ${styles.style}`}
+                    className={`${styles.category} ${styles.travel}`}
                 >
                     <Image
                         src="/travel.png"
@@ -60,12 +60,12 @@ const CategoryList = () => {
                         height={32}
                         className={styles.image}
                     />
-                    styles
+                    Travel
                 </Link>
 
                 <Link
                     href={'/blog'}
-                    className={`${styles.category} ${styles.style}`}
+                    className={`${styles.category} ${styles.culture}`}
                 >
                     <Image
                         src="/culture.png"
@@ -74,12 +74,12 @@ const CategoryList = () => {
                         height={32}
                         className={styles.image}
                     />
-                    styles
+                    Culture
                 </Link>
                 
                 <Link
                     href={'/blog'}
-                    className={`${styles.category} ${styles.style}`}
+                    className={`${styles.category} ${styles.coding}`}
                 >
                     <Image
                         src="/coding.png"
@@ -88,7 +88,7 @@ const CategoryList = () => {
                         height={32}
                         className={styles.image}
                     />
-                    styles
+                    Coding
                 </Link>
             </div>
         </div>
