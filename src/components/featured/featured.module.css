@@ -61,7 +61,7 @@
     }
 
     .imgContainer{
-        display: flex;
+        display: none;
 
     }
     
@@ -71,6 +71,7 @@
     .title{
         font-size: 48px;
     }  
+
 }
 
 @media screen and (max-width:640px) {

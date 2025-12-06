@@ -5,6 +5,7 @@ import Link from "next/link";
 import ThemeToggle from "@/components/themeToggle/ThemeToggle";
 import AuthLinks from "@/components/authLinks/AuthLinks";
 
+
 const navbar = () => {
     return (
         <div className={styles.container}>
@@ -21,7 +22,7 @@ const navbar = () => {
                     width={24}
                     height={24}
                 />
-                <Image src="/github.png" alt="github" width={24} height={24} />
+                
                 <Image
                     src="/twitter.png"
                     alt="twitter"
@@ -32,9 +33,15 @@ const navbar = () => {
             <div className={styles.logo}>string2blogs</div>
             <div className={styles.links}>
                 <ThemeToggle />
-                <Link href="/" className={styles.link}>Home</Link>
-                <Link href="/" className={styles.link}>Contact</Link>
-                <Link href="/" className={styles.link}>About</Link>
+                <Link href="/" className={styles.link}>
+                    Home
+                </Link>
+                <Link href="/" className={styles.link}>
+                    Contact
+                </Link>
+                <Link href="/" className={styles.link}>
+                    About
+                </Link>
                 <AuthLinks />
             </div>
         </div>
