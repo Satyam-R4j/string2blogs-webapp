@@ -1,20 +1,52 @@
 import React from "react";
 import styles from "./singlePage.module.css";
 import Menu from "@/components/menu/Menu";
+import Image from "next/image";
 
 const SinglePage = () => {
     return (
         <div className={styles.container}>
             <div className={styles.infoContainer}>
                 <div className={styles.textContainer}>
-                    <h1 className="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+                    <h1 className={styles.title}>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.
+                    </h1>
                     <div className={styles.user}>
-                            
+                        <div className={styles.userImageContainer}>
+                            <Image
+                                src="/p1.jpeg"
+                                alt=""
+                                fill
+                                className={styles.avatar}
+                            />
+                        </div>
+                        <div className={styles.userTextContainer}>
+                            <span className={styles.username}>Vicky</span>
+                            <span className={styles.date}>04.05.2024</span>
+                        </div>
                     </div>
+                </div>
+                <div className={styles.imageContainer}>
+                    <Image src="/p1.jpeg" alt="" fill className={styles.image}/>
                 </div>
             </div>
             <div className={styles.content}>
-                <div className={styles.post}></div>
+                <div className={styles.post}>
+                    <div className={styles.description}>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nemo aspernatur assumenda iure ab odio facilis, molestiae quia unde enim praesentium mollitia ipsa, distinctio repellat?
+                    </p>
+                    <h2>
+                        Lorem ipsum dolor sit amet.
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam quia ut praesentium facilis, officia dignissimos? Dolor reiciendis obcaecati blanditiis cum ab itaque sint, impedit officia.
+                    </p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam nobis exercitationem tempore beatae perspiciatis fugiat alias eligendi mollitia. Tempora et debitis dolore aut quasi eveniet.</p>
+                    </div>
+                </div>
                 <Menu />
             </div>
         </div>
